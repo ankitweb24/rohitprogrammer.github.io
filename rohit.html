@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 50%;
+            padding: 30px;
+            background: orange;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box{
+            width: 160px;
+            height: 160px;
+            background-color: green;
+            margin: 5px;
+            display: grid;
+            place-items: center;
+        }
+
+        .box:nth-child(1){
+            background-color: red;
+        }
+        .box:nth-child(2){
+            background-color: purple;
+        }
+        .box:nth-child(3){
+            background-color:black;
+        }
+
+        .box img{
+            width: 100%;
+
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="box">
+        <img src="charlicheplin.jpg" alt="plz wait">
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+   </div>
+
+   <button>click me</button>
+</body>
+
+<script>
+    let btn = document.querySelector('button');
+    let main = document.querySelector('.main');
+
+
+    btn.addEventListener('click', ()=> {
+       main.style.background = "blue"
+    })
+</script>
+</html>
